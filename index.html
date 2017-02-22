@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>radMaziqPlayer102</title>
+
+  <link href="css/main.css" rel="stylesheet">
+
+  <!-- Online -->
+  <!-- Bs -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+  <!-- OffLine -->
+  <!-- Bs -->
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/controlls"></script>
+  <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+
+</head>
+<body>
+  <div id="container">
+    <div id="audio-img">
+      <img class="cover">
+    </div>
+    <div id="audio-player">
+      <div id="audio-info">
+        <span class="artist"></span> - <span class="title"></span>
+      </div>
+      <input id="volume" type="range" min="0" max="5" value="3">
+      <br>
+      <div id="audio-buttons">
+        <button id="prev"></button>
+        <button id="play"></button>
+        <button id="pause"></button>
+        <button id="stop"></button>
+        <button id="next"></button>
+      </div>
+      <div class="clearfix"></div>
+      <div id="tracker">
+        <div id="progressbar">
+          <span id="progress"></span>
+        </div>
+        <span id="duration"></span>
+      </div>
+      <div class="clearfix"></div>
+      <ul id="playlist">
+        <li class="song" song="KillParis-TenderLove.mp3" cover="RD.png" artist="Kill Paris">Tender Love.mp3</li>
+        <li class="song" song="TantrumDesire-GuidedRhythm.mp3" cover="contempo.png" artist="Tantrum Desire">Guided Rhythm.mp3</li>
+        <li class="song" song="RossJack-RunningLate-ft.B.K.mp3" cover="RunningLate.png" artist="Ross Jack">Running Late-ft.B.K.mp3</li>
+      </ul>
+    </div>
+    </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
