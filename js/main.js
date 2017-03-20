@@ -76,6 +76,8 @@ $('#stop').click(function(){
 // Next Button
 $('#next').click(function(){
   audio.pause();
+  $('#play').hide();
+  $('#pause').show();
   var next = $('#playlist li.active').next();
   if(next.length == 0){
     next = $('#playlist li:first-child');
@@ -99,7 +101,7 @@ $('#prev').click(function(){
 
 //Volume Slider
 $('#volume').change(function(){
-  audio.volume = parseFloat(this.value / 5);
+  audio.volume = parseFloat(this.value / 10);
 })
 
 
@@ -117,7 +119,11 @@ function showDuration(){
     $('#duration').html(m + ':' + s);
     var value = 0;
     if(audio.currentTime > 0){
-      value = Math.floor((100 / audio.duration) * audio.currentTime);
+      value = Math.floor((80 / audio.duration) * audio.currentTime);
+      if(value === 80 ){
+        $('#pause').hide();
+        $('#play').show();
+      }
     }
     $('#progress').css('width',value +'%');
   });

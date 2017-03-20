@@ -6,21 +6,32 @@
   outline: none;
 }
 
+.row{
+  margin: auto !important;
+}
+
+.col-md-6 {
+width: 100% !important;
+}
+
 body {
   font-weight: Arial, sans-serif;
   font-size: 13px;
   line-height: 1.5em;
-  background: url(../img/bg1.png)
+  background: url(../img/bg201.png)
 }
 .clearfix{
   clear: both;
 }
 
 #container{
-  width: 330px;
+  width: 360px;
   color: white;
   min-height: 400px;
-  background: #EB921E;
+  /*Blue Gradient*/
+  /*background-image: linear-gradient(to bottom, #00B188 0%, #021D50 100%);*/
+  /*Pink/ Red Gradient*/
+  background-image: linear-gradient(to bottom, #F92850 0%, #6D0515 100%);
   overflow: auto;
   margin: 60px auto;
   border: #fff solid 3px;
@@ -30,6 +41,7 @@ body {
 }
 
 #audio-img{
+  padding-top: 10px;
   position: relative;
   overflow: hidden;
   height: 100%;
@@ -43,6 +55,9 @@ body {
 #audio-info{
   text-align: center;
   padding: 10px;
+  line-height: 1.5;
+  font-family: arial;
+  font-size: 18px;
 }
 #audio-info .artist{
   font-weight: bold;
@@ -60,7 +75,7 @@ input#volume{
 
 input#volume::-webkit-slider-thumb{
   -webkit-appearance: none !important;
-  background: url(../img/knob.png) no-repeat;
+  background: url(../img/controllers_101/knob.png) no-repeat;
   height: 12px;
   width: 12px;
 }
@@ -76,37 +91,41 @@ input#volume::-webkit-slider-thumb{
 button#play{
   width: 70px;
   height: 70px;
-  background: url(../img/play1.png) no-repeat;
+  background: url(../img/controllers_101/play.png) no-repeat;
   float: left;
 }
 button#pause{
   width: 70px;
   height: 70px;
-  background: url(../img/pause.png) no-repeat;
+  background: url(../img/controllers_101/pause_yellow.png) no-repeat;
   float: left;
 }
 button#stop{
   width: 70px;
   height: 70px;
-  background: url(../img/stop.png) no-repeat;
+  background: url(../img/controllers_101/stop.png) no-repeat;
   float: left;
 }
 button#prev{
   width: 70px;
   height: 70px;
-  background: url(../img/prev.png) no-repeat;
+  background: url(../img/controllers_101/prev.png) no-repeat;
   float: left;
 }
 button#next{
   width: 70px;
   height: 70px;
-  background: url(../img/next.png) no-repeat;
-  float: right;
+  background: url(../img/controllers_101/next.png) no-repeat;
+  float: left;
 }
 
 #playlist{
   list-style: none;
-  padding: 10px;
+  padding-top: 10px;
+  line-height: 1.5;
+  font-family: arial;
+  font-size: 18px;
+  padding-bottom: 10px;
 }
 
 #playlist li{
@@ -115,22 +134,24 @@ button#next{
 }
 #playlist li.active{
   font-weight: bold;
-  padding: 10px;
-  background: rgba(206, 113, 8, 0.34);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: rgba(7, 101, 165, 0.1);
 }
 
 #progressbar{
   width: 80%;
   margin-left: 2%;
+  margin-right: 14px;
   margin-bottom: 20px;
   margin-top: 9px;
   height: 10px;
-  /*background: url(../img/progress_bg.png) no-repeat;*/
+  background: url(../img/controllers_101/progress_bar.png) no-repeat;
   float: left;
 }
 
 #progress{
-  background: url(../img/progress.png) no-repeat;
+  background: url(../img/controllers_101/progress.png) no-repeat;
   height: 10px;
   display: inline-block;
   position: absolute;
@@ -139,7 +160,7 @@ button#next{
 }
 
 #duration{
-  /*position: absolute;*/
+  position: absolute;
   top: 0;
   right: 10px;
   padding: 4px 8px;
